@@ -55,7 +55,7 @@ public class FileDownloadController {
     // 파일 이름 추출 메서드
     private String extractFileName(String url) {
         // URI에서 경로의 마지막 부분 추출
-        String path = URI.create(url).getPath();  // .png?__X
+        String path = URI.create(url).getPath();  // .png?__X 
         return path.substring(path.lastIndexOf("/") + 1);
     }
 }
